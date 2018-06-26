@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    tools:context="com.example.michal.rysownik2.MainActivity">
+
+    <com.example.michal.rysownik2.Rysownik
+        android:id="@+id/powierzchnia_rysunku"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rozmiar_linii"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:id="@+id/Opcje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/red_button"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:background="#ff0000"
+            android:onClick="redbutton"
+            android:text="" />
+
+        <Button
+            android:id="@+id/yellow_button"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:background="#fff000"
+            android:onClick="yellowbutton"
+            android:text="" />
+
+        <Button
+            android:id="@+id/blue_button"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:background="#0000ff"
+            android:onClick="bluebutton"
+            android:text="" />
+
+        <Button
+            android:id="@+id/green_button"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:background="#00ff00"
+            android:onClick="greenbutton"
+            android:text="" />
+
+        <Button
+            android:id="@+id/white_button"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:onClick="whitebutton"
+            android:text="" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:onClick="clearbutton"
+            android:text="X" />
+
+        <Button
+            android:id="@+id/line_button"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:onClick="linebutton"
+            android:text="S" />
+
+        <Button
+            android:id="@+id/circle_button"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/green_button"
+            android:onClick="circlebutton"
+            android:text="o" />
+
+        <CheckBox
+            android:id="@+id/wypelnienieCheckBox"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:onClick="wypelnienieCheck"
+            android:text="" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/rozmiar_linii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Opcje"
+        android:max="30" />
+
+
+
+</RelativeLayout>
